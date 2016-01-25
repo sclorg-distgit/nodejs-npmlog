@@ -3,8 +3,8 @@
 %{?nodejs_find_provides_and_requires}
 
 Name:           %{?scl_prefix}nodejs-npmlog
-Version:        0.1.1
-Release:        2.sc1%{?dist}
+Version:        2.0.0
+Release:        1%{?dist}
 Summary:        Logger for npm
 BuildArch:      noarch
 ExclusiveArch: %{nodejs_arches} noarch
@@ -46,6 +46,9 @@ rm -rf %buildroots
 %doc LICENSE README.md example.js
 
 %changelog
+* Mon Nov 30 2015 Tomas Hrcka <thrcka@redhat.com> - 2.0.0-1
+- Rebase to new upstream release
+
 * Thu Jul 23 2015 Tomas Hrcka <thrcka@redhat.com> - 0.1.1-2
 - Remove macro that handles deps
 
